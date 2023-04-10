@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Scope</title>
+</head>
+<body>
+    <h1>Scope and life time of a variable.</h1>
+    <dl>
+        <dt>Scope of a variable</dt>
+        <dd>Variables declared within a function are local to  that function. <br>
+        Variables declared outside of any function are global variables</dd>
+        <dt>Life time of a variable</dt>
+        <dd>Local variable's life time is within the block of its declaration <br>
+        Global variable's life time is throughout the program</dd>
+    </dl>
+</body>
+<script type="text/javascript">
+    // Variable should start with "A-Z" "a-z" or "_"
+    // Variable are case sensitive "Demo" "demo" both are not same
+    // Also we can create variable alphabatic and  numeric like "num1"
+    var name;   // Variable declearation
+    name = "Hello World!";   // Variable initialization
+    name = "New Word!"; // Over write variable value
+    var newname = "Sabir Ahamed";   // Variable declearation and same time initialization
+    alert(newname);
+    console.log(name);
+    document.write(newname);
+</script>
+</html>
