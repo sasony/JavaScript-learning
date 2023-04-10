@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript DOM function</title>
+</head>
+<body>
+    <!-- For this lession check console -->
+    <div id="one">
+        Inside console we pick whole object
+    </div>
+    <div id="two">
+        <h1>Indide console we pick innerHTML targat by id</h1>
+    </div>
+    <div id="three">
+        Welcome to Development world!
+    </div>
+
+    <div class="four">
+        This element targate by class name
+    </div>
+    <div class="four">
+        This element targate by class name and used in alert
+    </div>
+</body>
+<script type="text/javascript">
+    // This line of code targat the id and pick whole object
+    var one = document.getElementById("one"); // output: (object) <div id="main"> Welcome to Development world! </div>
+    // This line of code targate the id and take innerHTML
+    var two = document.getElementById("two").innerHTML; // output: Welcome to Development world! (<h1>Welcome to Development world!</h1>)
+    // This line of code use to put data in DOM it will replace old data
+    document.getElementById("three").innerHTML = "<h1>This text written by JavaScript</h1>";
+    // get element by class name
+    var four = document.getElementsByClassName("four");
+    var five = document.getElementsByClassName("four")[1].innerHTML;
+    var four = document.getElementsByClassName("four")[0].innerHTML = "<h2>Text changed by javascript<h2>";
+    console.log(one);
+    console.log(two);
+    console.log(four);
+    alert(five);
+</script>
+</html>
