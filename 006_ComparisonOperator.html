@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparison Operators</h1>
+    <table>
+        <tr>
+            <th>Operators</th>
+            <th>Syntax</th>
+            <th>Useges</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Equal</td>
+            <td>==</td>
+            <td>is equal</td>
+            <td>8 == 8</td>
+            <td id="equ"></td>
+        </tr>
+        <tr>
+            <td>Not Equal</td>
+            <td>!=</td>
+            <td>is not equal</td>
+            <td>8 != 8</td>
+            <td id="notEqual"></td>
+        </tr>
+        <tr>
+            <td>Greater then</td>
+            <td>></td>
+            <td>is greater then</td>
+            <td>8 > 8</td>
+            <td id="gre"></td>
+        </tr>
+        <tr>
+            <td>Less then</td>
+            <td><</td>
+            <td>is less then</td>
+            <td>7 < 8</td>
+            <td id="les"></td>
+        </tr>
+        <tr>
+            <td>Greater then or equalto</td>
+            <td>>=</td>
+            <td>is greater then or equal</td>
+            <td>8 >= 8</td>
+            <td id="getequ"></td>
+        </tr>
+        <tr>
+            <td>Less then or equalto</td>
+            <td><=</td>
+            <td>is less then or equal</td>
+            <td>7 <= 8</td>
+            <td id="lesequ"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    // Equal
+    let equ1 = 8;
+    let equ2 = 8;
+    let equres = equ1 == equ2;
+    document.getElementById("equ").innerHTML = equres;
+
+    // Not Equal
+    let not1 = 8;
+    let not2 = 8;
+    let notres = not1 != not2;
+    document.getElementById("notEqual").innerHTML = notres;
+
+    // Greater Then
+    let gre1 = 8;
+    let gre2 = 8;
+    let greres = gre1 > gre2;
+    document.getElementById("gre").innerHTML = greres;
+
+    // Less Then
+    let les1 = 7;
+    let les2 = 8;
+    let lesres = les1 < les2;
+    document.getElementById("les").innerHTML = lesres;
+
+    // Greater then or equal
+    let greequ1 = 8;
+    let greequ2 = 8;
+    let greequres = greequ1 >= greequ2;
+    document.getElementById("getequ").innerHTML = greequres;
+
+    // Less then or equal
+    let lesequ1 = 7;
+    let lesequ2 = 8;
+    let lesequres = lesequ1 <= lesequ2;
+    document.getElementById("lesequ").innerHTML = lesequres;
+</script>
+</html>
