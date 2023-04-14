@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmatic Operator</title>
+</head>
+<body>
+    <h1>Arithmatic Operators</h1>
+    <dl>
+        <dt>Addition</dt>
+        <dd>+ Addition helps to add numbers. ex - 45 + 5 = 50</dd>
+        <dd id="add"></dd>
+        <dt>Substraction</dt>
+        <dd>- Substraction helps to substract numbers. ex - 85 - 25 = 60</dd>
+        <dd id="sub"></dd>
+        <dt>Multiplecation</dt>
+        <dd>* Multiplection help to multiply numbers. ex - 60 * 6 = 360</dd>
+        <dd id="mult"></dd>
+        <dt>Divition</dt>
+        <dd>/ Divition help to divide two numbers. ex - 75 / 5 = 15</dd>
+        <dd id="div"></dd>
+        <dt>Modulas</dt>
+        <dd>% Modulas divide tow numbers and output remainder. ex - 9 % 2 = 1</dd>
+        <dd id="mod"></dd>
+        <dt>Exponent</dt>
+        <dd>** Exponent helps to, to the power of numbers. ex - 3 ** 2 = 9</dd>
+        <dd id="exp"></dd>
+        <dt>Increment</dt>
+        <dd>++ Increment operator helps to increse by 1. ex - 8++ = 9</dd>
+        <dd id="inc"></dd>
+        <dt>Decrement</dt>
+        <dd>-- Decrement operator helps to decress by 1. ex - 8-- = 7</dd>
+        <dd id="dec"></dd>
+    </dl>
+</body>
+<script type="text/javascript">
+    // Addition
+    let add1 = 45;
+    let add2 = 5;
+    let addres = add1 + add2;
+    document.getElementById("add").innerHTML = addres;
+
+    // Substraction
+    let sub1 = 85;
+    let sub2 = 25;
+    let subres = sub1 - sub2;
+    document.getElementById("sub").innerHTML = subres;
+
+    // Multiplecation
+    let mult1 = 60;
+    let mult2 = 6;
+    let multres = mult1 * mult2;
+    document.getElementById("mult").innerHTML = multres;
+
+    // Divition
+    let div1 = 75;
+    let div2 = 5;
+    let divres = div1 / div2;
+    document.getElementById("div").innerHTML = divres;
+
+    // Modulas
+    let mod1 = 9;
+    let mod2 = 2;
+    let modres = mod1 % mod2;
+    document.getElementById("mod").innerHTML = modres;
+
+    // Exponent
+    let exp1 = 3;
+    let exp2 = 2;
+    let expres = 3 ** 2;
+    document.getElementById("exp").innerHTML = expres;
+
+    // Increment
+    let inc = 8;
+    inc++;
+    document.getElementById("inc").innerHTML = inc;
+
+    // Decrement
+    let dec = 8;
+    dec--;
+    document.getElementById("dec").innerHTML = dec;
+</script>
+</html>
