@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operators</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment Operators</h1>
+    <table>
+        <tr>
+            <th>Operators</th>
+            <th>Syntax</th>
+            <th>Useges</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Simple Assign</td>
+            <td>=</td>
+            <td>Assign any value to a variable</td>
+            <td>simasn = 5</td>
+            <td id="simasn"></td>
+        </tr>
+        <tr>
+            <td>Add and Assign</td>
+            <td>+=</td>
+            <td>addres = addres + addasn; addres = 6 + 12 = 18;</td>
+            <td>12 += 6</td>
+            <td id="addasn"></td>
+        </tr>
+        <tr>
+            <td>Substract and Assign</td>
+            <td>-=</td>
+            <td>subasn = subasn - subres; subasn = 12 - 6 = 6;</td>
+            <td>12 -= 6</td>
+            <td id="subasn"></td>
+        </tr>
+        <tr>
+            <td>Multiplication and Assign</td>
+            <td>*=</td>
+            <td>mulasn = mulasn * mulres; mulasn = 6 * 5 = 30;</td>
+            <td>6 *= 5</td>
+            <td id="mulasn"></td>
+        </tr>
+        <tr>
+            <td>Divition and Assign</td>
+            <td>/=</td>
+            <td>divasn = divasn / divres; divasn = 30 / 5 = 6;</td>
+            <td>30 /= 5</td>
+            <td id="divasn"></td>
+        </tr>
+        <tr>
+            <td>Modulas and Assign</td>
+            <td>%=</td>
+            <td>modasn = modasn % modres; modasn = 31 % 5 = 1;</td>
+            <td>31 %= 5</td>
+            <td id="modasn"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    // Simple Assignment Operator
+    let simasn = 5;
+    let simres = simasn;
+    document.getElementById("simasn").innerHTML = "simres = " + simres;
+
+    // Add and Assign
+    let addasn = 12;
+    let addres = 6;
+    // addres = addres + addasn; addres = 6 + 12 = 18;
+    addres += addasn;
+    document.getElementById("addasn").innerHTML = addres;
+
+    // Substract and Assign
+    let subasn = 12;
+    let subres = 6;
+    // subasn = subasn - subres; subasn = 12 - 6 = 6;
+    subasn -= subres;
+    document.getElementById("subasn").innerHTML = subasn;
+
+    // Multiplication and Assign
+    let mulasn = 6;
+    let mulres = 5;
+    // mulasn = mulasn * mulres; mulasn = 6 * 5 = 30;
+    mulasn *= mulres;
+    document.getElementById("mulasn").innerHTML = mulasn;
+
+    // Divition and Assign
+    let divasn = 30;
+    let divres = 5;
+    // divasn = divasn / divres; divasn = 30 / 5 = 6;
+    divasn /= divres;
+    document.getElementById("divasn").innerHTML = divasn;
+
+    // Divition and Assign
+    let modasn = 31;
+    let modres = 5;
+    // modasn = modasn % modres; modasn = 31 % 5 = 1;
+    modasn %= modres;
+    document.getElementById("modasn").innerHTML = modasn;
+</script>
+</html>
