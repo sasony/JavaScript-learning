@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical And Ternary Operators</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Logical And Ternary Operators</h1>
+    <table>
+        <tr>
+            <th>Operators</th>
+            <th>Syntax</th>
+            <th>Useges</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Logical AND</td>
+            <td>&&</td>
+            <td>if both condition are true</td>
+            <td>x && y</td>
+            <td id="and"></td>
+        </tr>
+        <tr>
+            <td>Logical OR</td>
+            <td>||</td>
+            <td>if only one condition true</td>
+            <td>a || b</td>
+            <td id="or"></td>
+        </tr>
+        <tr>
+            <td>Logical OR 2</td>
+            <td>||</td>
+            <td>if only one condition true</td>
+            <td>0 || 1</td>
+            <td id="or2"></td>
+        </tr>
+        <tr>
+            <td>Ternary</td>
+            <td>condition ? "true" : "false"</td>
+            <td>if 5 > 7 yes will print. if no no will print</td>
+            <td>5 > 7</td>
+            <td id="ternary"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    // Logical AND
+    let x = true;
+    let y = true;
+    let z = x && y; // We are checked and gate logic both condition need to be true then result will true
+    document.getElementById("and").innerHTML = z;
+
+    // Logical OR
+    let a = true;
+    let b = false;
+    let c = a || b;
+    document.getElementById("or").innerHTML = c;
+
+    let a2 = 0;
+    let b2 = 1;
+    let c2 = a2 || b2;
+    document.getElementById("or2").innerHTML = c2;
+
+    // Ternary Operator
+    let d = 5;
+    let e = 7;
+    let f;
+    f = d > e ? "yes" : "no";
+    document.getElementById("ternary").innerHTML = f;
+</script>
+</html>
